@@ -34,10 +34,4 @@ jobs:
             registry-username: ${{ secrets.REGISTRY_USERNAME }}
             registry-password: ${{ secrets.REGISTRY_PASSWORD }}
             name: aci-sampleapp
-            properties:
-                configuration:
-                    ingress:
-                      external: true
-                      allowInsecure: false
-                      targetPort: 8000
             location: 'west us'
